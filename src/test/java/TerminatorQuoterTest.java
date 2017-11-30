@@ -2,8 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import org.junit.Before;
-import quater.TerminatorQuoter;
+import quoter.Quoter;
 
 public class TerminatorQuoterTest {
 
@@ -16,7 +15,7 @@ public class TerminatorQuoterTest {
 
     @Test
     public void test1() {
-        context.getBean(TerminatorQuoter.class).sayQuote();
+        context.getBean(Quoter.class).sayQuote();
     }
 
 }

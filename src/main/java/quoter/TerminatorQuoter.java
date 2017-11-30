@@ -1,10 +1,11 @@
-package quater;
+package quoter;
 
 import lombok.Setter;
 
 import javax.annotation.PostConstruct;
 
-public class TerminatorQuoter implements Quater {
+@Profiling
+public class TerminatorQuoter implements Quoter {
 
     @InjectRandomInt(min = 1, max = 4)
     private int repeat;

@@ -5,12 +5,17 @@
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
+    <!-- dont work :(
+    <context:annotation-config/> -->
+
+    <bean class="quoter.ProfilingHandlerBeanPostProcessor"/>
+
     <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
 
-    <bean id = "terminatorQuater" class = "quater.TerminatorQuoter">
+    <bean id = "terminatorQuoter" class = "quoter.TerminatorQuoter">
         <property name="message" value="I'll be back"/>
     </bean>
 
-    <bean class="quater.InjectRandomIntAnnotationBeanPostProcessor"/>
+    <bean class="quoter.InjectRandomIntAnnotationBeanPostProcessor"/>
 
 </beans>
