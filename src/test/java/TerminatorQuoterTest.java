@@ -15,7 +15,7 @@ public class TerminatorQuoterTest {
 
     @Test
     public void test1() {
-        context.getBean(Quoter.class);
+        context.getBean(Quoter.class).sayQuote();
     }
 
 }
