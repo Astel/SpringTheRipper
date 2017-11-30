@@ -15,12 +15,14 @@ public class TerminatorQuoter implements Quoter {
     }
 
     @Override
+    @PostProxy
     public void sayQuote() {
         for( int i = 0; i < repeat; i++) {
             System.out.println(message);
         }
     }
 
+    //Why is it work?
     @PostConstruct
     public void init() {
         System.out.println("Phase 2");

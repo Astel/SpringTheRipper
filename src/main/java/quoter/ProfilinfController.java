@@ -6,6 +6,6 @@ import lombok.Setter;
 public class ProfilinfController implements ProfilinfControllerMBean{
     @Setter
     @Getter
-    private boolean enabled;
+    private boolean enabled = true;
 
 }
