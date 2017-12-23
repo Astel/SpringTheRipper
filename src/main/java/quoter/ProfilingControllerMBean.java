@@ -1,5 +1,5 @@
 package quoter;
 
-public interface ProfilinfControllerMBean {
+public interface ProfilingControllerMBean {
     void setEnabled(boolean enabled);
 }
